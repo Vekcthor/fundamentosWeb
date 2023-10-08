@@ -23,7 +23,7 @@
     <link href="sign-in.css" rel="stylesheet" />
     <link href="/assets/css/global.css" rel="stylesheet" />
   </head>
-  <body class="d-flex align-items-center py-4 bg-body-tertiary">
+  <body class="py-4 bg-body-tertiary container">
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path
@@ -144,45 +144,51 @@
         </nav>
       </div>
     </header>
-
-    <main class="form-signin w-100 m-auto">
-      <form id="signInForm">
-        <img
-          class="mb-4"
-          src="/assets/img/logoR.png"
-          alt=""
-          width="500"
-          height="500"
-        />
-        <h1 class="h3 mb-3 fw-normal">Entrar</h1>
-
-        <div class="form-floating">
-          <input
-            type="email"
-            class="form-control"
-            id="floatingInput"
-            placeholder="name@example.com"
-            required
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <main class="form-signin w-100 m-auto">
+        <form id="signInForm">
+          <img
+            class="mb-4"
+            src="/assets/img/logoR.png"
+            alt=""
+            width="300"
+            height="300"
           />
-          <label for="floatingInput">Email</label>
-        </div>
-        <div class="form-floating">
-          <input
-            type="password"
-            class="form-control"
-            id="floatingPassword"
-            placeholder="Password"
-            required
-          />
-          <label for="floatingPassword">Senha</label>
-        </div>
+          <h1 class="h3 mb-3 fw-normal">Entrar</h1>
 
-        <button class="btn btn-primary w-100 py-2" type="submit">Entrar</button>
-        <p class="mt-5 mb-3 text-body-secondary">&copy; 2023 Fundamentos Web</p>
-      </form>
-    </main>
+          <div class="form-floating">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+              required
+            />
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Password"
+              required
+            />
+            <label for="floatingPassword">Senha</label>
+          </div>
+
+          <button class="btn btn-primary w-100 py-2" type="submit">
+            Entrar
+          </button>
+          <p class="mt-5 mb-3 text-body-secondary">
+            &copy; 2023 Fundamentos Web
+          </p>
+        </form>
+      </main>
+    </div>
 
     <script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/global.js"></script>
     <script src="./sign_in.js"></script>
   </body>
 </html>

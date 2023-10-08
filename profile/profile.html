@@ -5,137 +5,23 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
+    <meta name="description" content="Fundamentos Web" />
     <meta
       name="author"
-      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
-    />
-    <meta name="generator" content="Hugo 0.118.2" />
-    <title>Jumbotron example · Bootstrap v5.3</title>
-
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.3/examples/jumbotron/"
+      content="Adriane Zaghi, Jean Nascimento e Victor Azevedo"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"
-    />
+    <title>Perfil</title>
 
-    <link
-      href="/assets/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="/assets/dist/css/bootstrap.min.css" />
 
     <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      href="/docs/5.3/assets/img/favicons/apple-touch-icon.png"
-      sizes="180x180"
-    />
-    <link
-      rel="icon"
-      href="/docs/5.3/assets/img/favicons/favicon-32x32.png"
-      sizes="32x32"
-      type="image/png"
-    />
-    <link
-      rel="icon"
-      href="/docs/5.3/assets/img/favicons/favicon-16x16.png"
-      sizes="16x16"
-      type="image/png"
-    />
-    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json" />
-    <link
-      rel="mask-icon"
-      href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg"
-      color="#712cf9"
-    />
-    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico" />
+
+    <link rel="icon" href="/assets/img/logoR.png" />
     <meta name="theme-color" content="#712cf9" />
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, 0.1);
-        border: solid rgba(0, 0, 0, 0.15);
-        border-width: 1px 0;
-        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -0.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
-
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-
-      .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
-      }
-    </style>
+    <link rel="stylesheets" href="profile.css" />
+    <link rel="stylesheets" href="/assets/css/global.css" />
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -235,42 +121,130 @@
 
     <main>
       <div class="container py-4">
-        <header class="pb-3 mb-4 border-bottom">
-          <a
-            href="/"
-            class="d-flex align-items-center text-body-emphasis text-decoration-none"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="32"
-              class="me-2"
-              viewBox="0 0 118 94"
-              role="img"
-            >
-              <title>Bootstrap</title>
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
-                fill="currentColor"
-              ></path>
-            </svg>
-            <span class="fs-4">Jumbotron example</span>
-          </a>
+        <header class="mb-auto">
+          <div>
+            <h3 class="float-md-start mb-0">Fundamentos Web</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+              <a
+                class="nav-link fw-bold py-1 px-0"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+              <a
+                class="nav-link fw-bold py-1 px-0 active"
+                aria-current="page"
+                href="/sign_in/sign_in.html"
+                >Login</a
+              >
+              <a
+                class="nav-link fw-bold py-1 px-0"
+                href="/register/register.html"
+                >Cadastro</a
+              >
+              <a class="nav-link fw-bold py-1 px-0" href="/about/about.html"
+                >Sobre</a
+              >
+            </nav>
+          </div>
         </header>
 
         <div class="p-5 mb-4 bg-body-tertiary rounded-3">
           <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-            <p class="col-md-8 fs-4">
+            <h1 class="display-5 fw-bold" id="user">Custom jumbotron</h1>
+            <p class="col-md-8 fs-4" id="userInfo">
               Using a series of utilities, you can create this jumbotron, just
               like the one in previous versions of Bootstrap. Check out the
               examples below for how you can remix and restyle it to your
               liking.
             </p>
-            <button class="btn btn-primary btn-lg" type="button">
-              Example button
+
+            <div class="row g-3">
+              <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  readonly
+                  disabled
+                />
+              </div>
+
+              <hr class="mt-4" />
+
+              <div class="col-12">
+                <label for="address" class="form-label">Endereço</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address"
+                  readonly
+                  disabled
+                />
+              </div>
+
+              <div class="col-8">
+                <label for="address2" class="form-label"
+                  >Ponto Referência</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address2"
+                  readonly
+                  disabled
+                />
+              </div>
+
+              <div class="col-4">
+                <label for="city" class="form-label">Cidade </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="city"
+                  readonly
+                  disabled
+                />
+              </div>
+
+              <div class="col-4">
+                <label for="neighbourhood" class="form-label">Bairro</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="neighbourhood"
+                  readonly
+                  disabled
+                />
+              </div>
+
+              <div class="col-4">
+                <label for="state" class="form-label">Estado</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="state"
+                  readonly
+                  disabled
+                />
+              </div>
+
+              <div class="col-4">
+                <label for="CEP" class="form-label">CEP </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="CEP"
+                  readonly
+                  disabled
+                />
+                <div class="invalid-feedback">Digite um CEP válido</div>
+              </div>
+            </div>
+            <hr class="mt-4" />
+            <button class="btn btn-primary btn-lg" id="logout" type="button">
+              Logout
             </button>
           </div>
         </div>
@@ -278,35 +252,132 @@
         <div class="row align-items-md-stretch">
           <div class="col-md-6">
             <div class="h-100 p-5 text-bg-dark rounded-3">
-              <h2>Change the background</h2>
-              <p>
-                Swap the background-color utility and add a `.text-*` color
-                utility to mix up the jumbotron look. Then, mix and match with
-                additional component themes and more.
-              </p>
-              <button class="btn btn-outline-light" type="button">
-                Example button
-              </button>
+              <h2>Mudar senha</h2>
+              <p>Preencha o campo abaixo para mudar sua senha:</p>
+              <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-6">
+                    <label for="password" class="form-label"
+                      >Senha
+                      <span class="text-body-secondary"
+                        >(Obrigatório)</span
+                      ></label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="mudar123"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      As 2 senhas devem ser iguais e não vazias
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <label for="passwordConfirmation" class="form-label"
+                      >Confirme sua senha
+                      <span class="text-body-secondary"
+                        >(Obrigatório)</span
+                      ></label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="passwordConfirmation"
+                      placeholder="mudar123"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      As 2 senhas devem ser iguais e não vazias
+                    </div>
+                  </div>
+
+                  <hr class="mt-4" />
+                </div>
+                <button class="btn btn-outline-light" type="submit">
+                  Mudar senha
+                </button>
+              </form>
             </div>
           </div>
           <div class="col-md-6">
             <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-              <h2>Add borders</h2>
-              <p>
-                Or, keep it light and add a border for some added definition to
-                the boundaries of your content. Be sure to look under the hood
-                at the source HTML here as we've adjusted the alignment and
-                sizing of both column's content for equal-height.
-              </p>
-              <button class="btn btn-outline-secondary" type="button">
-                Example button
+              <h2>Apagar cadastro</h2>
+              <p>Se deseja apagar seu cadastro, clique no botão abaixo.</p>
+              <p>ESSA AÇÃO É IRREVERSÍVEL</p>
+              <button
+                class="btn btn-danger"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#warningModal"
+              >
+                Apagar cadastro
               </button>
             </div>
           </div>
         </div>
 
+        <div id="warningModal" class="modal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Sucesso!</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p id="modalMessage">
+                  ATENÇÃO!
+                  <br />
+                  ESSA AÇÃO É IRREVERSÍVEL, VOCÊ REALMENTE DESEJA APAGAR SEU
+                  CADASTRO?
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" id="accept">
+                  ACEITO
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="successModal" class="modal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Sucesso!</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p id="modalMessage">
+                  Aviso!
+                  <br />
+                  Senha alterada com sucesso, você será redirecionado para a
+                  tela de login.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="ok">
+                  Ok
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <footer class="pt-3 mt-4 text-body-secondary border-top">
-          &copy; 2023
+          &copy; 2023 Fundamentos Web
         </footer>
       </div>
     </main>
@@ -315,5 +386,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="/assets/js/global.js"></script>
+    <script src="profile.js"></script>
   </body>
 </html>

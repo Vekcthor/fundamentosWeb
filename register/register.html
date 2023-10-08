@@ -220,7 +220,7 @@
                   required
                 />
                 <div class="invalid-feedback">
-                  Por favor digite um email válido
+                  As 2 senhas devem ser iguais e não vazias
                 </div>
               </div>
               <div class="col-6">
@@ -236,7 +236,7 @@
                   required
                 />
                 <div class="invalid-feedback">
-                  Por favor digite um email válido
+                  As 2 senhas devem ser iguais e não vazias
                 </div>
               </div>
 
@@ -286,10 +286,15 @@
                   placeholder="Digite Aqui"
                   required
                 />
+                <div class="invalid-feedback">Informe Sua Cidade</div>
               </div>
 
               <div class="col-4">
-                <label for="neighbourhood" class="form-label">Bairro<span class="text-body-secondary">(Obrigatório)</span></label>
+                <label for="neighbourhood" class="form-label"
+                  >Bairro<span class="text-body-secondary"
+                    >(Obrigatório)</span
+                  ></label
+                >
                 <input
                   type="text"
                   class="form-control"
@@ -301,7 +306,11 @@
               </div>
 
               <div class="col-4">
-                <label for="state" class="form-label">Estado<span class="text-body-secondary">(Obrigatório)</span></label>
+                <label for="state" class="form-label"
+                  >Estado<span class="text-body-secondary"
+                    >(Obrigatório)</span
+                  ></label
+                >
                 <input
                   type="text"
                   class="form-control"
@@ -334,13 +343,18 @@
             <hr class="my-4" />
 
             <div class="mb-3">
-              <label for="message" class="form-label">Deixe sua mensagem<span class="text-body-secondary">(Obrigatório)</span></label>
+              <label for="message" class="form-label"
+                >Deixe sua mensagem<span class="text-body-secondary"
+                  >(Obrigatório)</span
+                ></label
+              >
               <textarea
                 class="form-control"
                 id="message"
                 rows="3"
                 required
               ></textarea>
+              <div class="invalid-feedback">Por Favor, deixe uma mensagem</div>
             </div>
 
             <hr class="my-4" />
@@ -364,7 +378,7 @@
               ></button>
             </div>
             <div class="modal-body">
-              <p>
+              <p id="modalMessage">
                 CEP não encontrado, por Por favor, digite seu endereço
                 manualmente.
               </p>
@@ -382,12 +396,41 @@
         </div>
       </div>
 
+      <div id="successModal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Sucesso!</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p id="modalMessage">
+                Perfil criado com sucesso!
+                <br />
+                Você será redirecionado para tela de Login para poder acessar o
+                sistema!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" id="accept">
+                Aceitar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <footer class="my-5 pt-5 text-body-secondary text-center text-small">
         <p class="mb-1">&copy; 2023 Fundamentos Web</p>
       </footer>
     </div>
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/global.js"></script>
     <script src="register.js"></script>
   </body>
 </html>
