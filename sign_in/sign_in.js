@@ -1,3 +1,11 @@
+const myModalSuccess = new bootstrap.Modal(
+  document.getElementById("successModal")
+);
+
+document.querySelector("#accept").addEventListener("click", function (e) {
+  myModalSuccess.hide();
+  window.location.replace("../register/register.html");
+});
 document
   .querySelector("#signInForm")
   .addEventListener("submit", async function (e) {
@@ -18,19 +26,11 @@ document
 
       if (userExists) {
         sessionStorage.setItem("user", emailInput);
-        window.location.replace("/profile/profile.html");
+        window.location.replace("../profile/profile.html");
       } else {
-        if (
-          window.confirm(
-            "Usuário ou senha incorreta! Deseja fazer um novo cadastro?"
-          )
-        ) {
-          window.location.replace("/register/register.html");
-        }
+        myModalSuccess.show();
       }
     } else {
-      if (window.confirm("Sem login, ir pra cadastro?")) {
-        window.location.replace("/register/register.html");
-      }
+      myModalSuccess.show();
     }
   });

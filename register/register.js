@@ -55,7 +55,7 @@
 
   document.querySelector("#accept").addEventListener("click", function (e) {
     myModalSuccess.hide();
-    window.location.replace("/sign_in/sign_in.html");
+    window.location.replace("../sign_in/sign_in.html");
   });
 
   // Fetch all the forms we want to apply custom Bootstrap validation styles to

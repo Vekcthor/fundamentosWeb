@@ -125,20 +125,19 @@
         <nav class="nav nav-masthead justify-content-center float-md-end">
           <a
             class="nav-link fw-bold py-1 px-0"
-            aria-current="page"
             href="../index.html"
             >Home</a
           >
           <a
             class="nav-link fw-bold py-1 px-0 active"
             aria-current="page"
-            href="/sign_in/sign_in.html"
+            href="../sign_in/sign_in.html"
             >Login</a
           >
-          <a class="nav-link fw-bold py-1 px-0" href="/register/register.html"
+          <a class="nav-link fw-bold py-1 px-0" href="../register/register.html"
             >Cadastro</a
           >
-          <a class="nav-link fw-bold py-1 px-0" href="/about/about.html"
+          <a class="nav-link fw-bold py-1 px-0" href="../about/about.html"
             >Sobre</a
           >
         </nav>
@@ -185,6 +184,39 @@
           </p>
         </form>
       </main>
+    </div>
+
+    <div id="successModal" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Aviso!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="modalMessage">
+              Usuário ou senha incorreta! Deseja fazer um novo cadastro?
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="accept">
+              Ir para cadastro
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancelar
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>

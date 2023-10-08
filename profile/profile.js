@@ -32,12 +32,12 @@ if (credentialList && user) {
     }
   });
 } else {
-  window.location.replace("/index.html");
+  window.location.replace("../index.html");
 }
 
 document.querySelector("#logout").addEventListener("click", function (e) {
   sessionStorage.removeItem("user");
-  window.location.replace("/index.html");
+  window.location.replace("../index.html");
 });
 
 document.querySelector("#accept").addEventListener("click", function (e) {
@@ -54,12 +54,12 @@ document.querySelector("#accept").addEventListener("click", function (e) {
     sessionStorage.removeItem("credentials");
   }
   myModalSuccess.hide();
-  window.location.replace("/index.html");
+  window.location.replace("../index.html");
 });
 
 document.querySelector("#ok").addEventListener("click", function (e) {
   myModalSuccess.show();
-  window.location.replace("/sign_in/sign_in.html");
+  window.location.replace("../sign_in/sign_in.html");
 });
 
 window.onbeforeunload = function () {
